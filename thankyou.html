@@ -31,6 +31,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       var price = urlParam.get("price");
 
       //Fyll datalagret vid färdig transaktion
+      window.dataLayer = window.dataLayer || []
+      window.dataLayer.push({
+      event: "Checkout",
+      product: product
+      })
       
     </script>
     
